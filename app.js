@@ -1679,13 +1679,20 @@ Acc Growth Rate,N/A,0.051282051,0.024390244,-0.071428571,-0.102564103,0.25714285
         statusClass = "badge-na";
       }
 
-      // Check for annual link (only link confirmed Proceedings entries to official DOI sources; Undisclosed and Awaiting Data remain unlinked)
+      // Check for annual link (links confirmed Proceedings/entries to official DOI sources or preliminary website)
       const linkUrl = (conf.annual_links && conf.annual_links[String(r.year)]) ? String(conf.annual_links[String(r.year)]).trim() : "";
       let statusHtml = "";
-      if (linkUrl && statusText === "Proceedings") {
-        statusHtml = `<a href="${linkUrl}" target="_blank" rel="noopener noreferrer" class="badge ${statusClass} badge-link" title="Open ${conf.name} ${r.year} proceedings / DOI source: ${linkUrl}">
-          ${statusText} ↗
-        </a>`;
+      if (linkUrl && (statusText === "Proceedings" || statusText === "Undisclosed")) {
+        const hasDoi = linkUrl.toLowerCase().includes("doi");
+        if (hasDoi) {
+          statusHtml = `<a href="${linkUrl}" target="_blank" rel="noopener noreferrer" class="badge ${statusClass} badge-link" title="Open ${conf.name} ${r.year} proceedings / Official DOI: ${linkUrl}">
+            ${statusText} ↗
+          </a>`;
+        } else {
+          statusHtml = `<a href="${linkUrl}" target="_blank" rel="noopener noreferrer" class="badge badge-preliminary badge-link" title="(!) These data are not final because their proceedings have not yet been publicly released. (Conference Website: ${linkUrl})">
+            ${statusText} <span class="badge-notice-icon" title="Provisional: Proceedings not yet publicly released">(!)</span> ↗
+          </a>`;
+        }
       } else {
         statusHtml = `<span class="badge ${statusClass}">${statusText}</span>`;
       }

@@ -1167,6 +1167,27 @@ button {
   border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
+.badge-preliminary {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--warning);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+.badge-notice-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.22);
+  border-radius: var(--radius-full);
+  padding: 0.05rem 0.32rem;
+  margin-left: 0.2rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
 .badge-na {
   background: rgba(100, 116, 139, 0.15);
   color: var(--text-dim);
@@ -1320,6 +1341,50 @@ button {
 .footer-note {
   max-width: 700px;
   line-height: 1.6;
+}
+
+.footer-right-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.65rem;
+  text-align: right;
+}
+
+.btn-github-footer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.btn-github-footer:hover {
+  text-decoration: none;
+  background: var(--bg-card-hover);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.github-header-btn {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-header-btn:hover {
+  color: var(--accent-primary);
+  text-decoration: none;
 }
 
 /* ==========================================================================
