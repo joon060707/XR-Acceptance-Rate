@@ -1,9 +1,11 @@
 # XR-Acceptance-Rate
-Summary of VR/AR/MR/XR-related conference acceptance rate and publication counts
+Summary of VR/AR/MR/XR-related conferences' acceptance rate and publication counts
 
 https://joon060707.github.io/XR-Acceptance-Rate/
 
 **Currently covers: ACM CHI, ACM UIST, IEEE VR, IEEE ISMAR, ACM VRST, ACM SUI**
+
+**Period: from 2016 to latest**
 
 For requesting updates & suggestions, please email: joon060707@naver.com
 
