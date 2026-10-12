@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AR/VR/MR Conference Acceptance Statistics (2016–2027)</title>
+  <meta name="description"
+    content="Interactive submission statistics, acceptance rates, and longitudinal growth trends for top AR/VR/MR conferences (CHI, ISMAR, SUI, UIST, IEEE VR, VRST)." />
+
+  <!-- Google Fonts: Plus Jakarta Sans for crisp, modern academic presentation -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Main Design System -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       Site Header
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo-group">
+        <div class="logo-badge">🥽</div>
+        <div class="logo-text">
+          <h1>
+            AR / VR / MR Conference Acceptance Statistics
+            <!-- <span class="badge-pill" id="headerYearBadge">2016–2027</span> -->
+          </h1>
+        </div>
+      </div>
+
+      <div class="header-nav">
+        <!-- Dual Views Navigation Tabs -->
+        <nav class="tab-nav" aria-label="Main Views">
+          <button class="tab-btn active" data-view="single" id="tabBtnSingle">
+            <span>🎯</span> Single Venue
+          </button>
+          <button class="tab-btn" data-view="multi" id="tabBtnMulti">
+            <span>⚖️</span> Compare Venues
+          </button>
+        </nav>
+
+        <!-- Theme Toggle -->
+        <button class="btn-icon" id="themeToggleBtn" title="Toggle Theme" aria-label="Toggle Dark or Light Theme">
+          ☀️
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Main Content Area
+       ========================================================================= -->
+  <main class="main-wrapper">
+
+    <!-- =====================================================================
+         VIEW 1: Single Conference Focus View
+         ===================================================================== -->
+    <section id="singleConferenceView" class="view-section active" aria-label="Single Conference View">
+
+      <!-- Conference Selector Pills -->
+      <div class="conf-selector-bar" id="singleConfPills">
+        <!-- Dynamically injected conference buttons -->
+      </div>
+
+      <!-- Conference Metadata Profile Card -->
+      <article class="conf-profile-card" id="confProfileCard">
+        <div class="profile-top">
+          <div class="profile-title-area">
+            <h2>
+              <span id="profileConfName">CHI</span>
+              <span class="profile-since" id="profileSince">Est. 1982</span>
+            </h2>
+            <div style="font-size: 1.05rem; font-weight: 600; color: var(--text-main); margin-top: 0.2rem;"
+              id="profileFullName">
+              ACM CHI Conference on Human Factors in Computing Systems
+            </div>
+          </div>
+
+          <div class="profile-actions">
+            <a href="https://chi.acm.org" target="_blank" rel="noopener noreferrer" class="btn-primary-outline"
+              id="profileWebLink">
+              <span>🌐</span> Official Website
+            </a>
+          </div>
+        </div>
+
+        <p class="profile-desc" id="profileDesc">
+          The premier international conference on Human-Computer Interaction, showcasing foundational advances in
+          interactive systems, user research, and immersive AR/VR experiences.
+        </p>
+
+        <div class="profile-sources" id="profileSources">
+          <!-- Dynamically populated source links -->
+        </div>
+      </article>
+
+      <!-- KPI Summary Metrics Grid -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-label">
+            <span>Total Submissions</span>
+            <span>📝</span>
+          </div>
+          <div class="kpi-value" id="kpiSubmissions">-</div>
+          <div class="kpi-subtext" id="kpiSubYoY">Latest Recorded Year</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-label">
+            <span>Accepted Papers</span>
+            <span>✅</span>
+          </div>
+          <div class="kpi-value" id="kpiAccepted">-</div>
+          <div class="kpi-subtext" id="kpiAccYoY">Latest Recorded Year</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-label">
+            <span>Acceptance Rate</span>
+            <span>🎯</span>
+          </div>
+          <div class="kpi-value" id="kpiRate" style="color: var(--accent-primary);">-</div>
+          <div class="kpi-subtext" id="kpiRateDiff">Vs. Previous Year</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-label">
+            <span>Historical Avg Rate</span>
+            <span>📊</span>
+          </div>
+          <div class="kpi-value" id="kpiAvgRate">-</div>
+          <div class="kpi-subtext" id="kpiAvgPeriod">Over all recorded cycles</div>
+        </div>
+      </div>
+
+      <!-- Intuitive Metric Selector Cards (Replaces Dropdown) -->
+      <div class="metric-selector-bar" id="singleMetricBtns" role="tablist" aria-label="Metric Selection Cards">
+        <button class="metric-tab-card active" data-metric="acceptance_rate" role="tab" aria-selected="true">
+          <div class="metric-tab-header">
+            <span class="metric-tab-icon">🎯</span>
+            <span class="metric-tab-badge">Rate</span>
+          </div>
+          <div class="metric-tab-title">Acceptance Rate</div>
+          <div class="metric-tab-sub">Accepted / Total (%)</div>
+        </button>
+        <button class="metric-tab-card" data-metric="submission" role="tab" aria-selected="false">
+          <div class="metric-tab-header">
+            <span class="metric-tab-icon">📝</span>
+            <span class="metric-tab-badge">Volume</span>
+          </div>
+          <div class="metric-tab-title">Submission Count</div>
+          <div class="metric-tab-sub">Total Papers Submitted</div>
+        </button>
+        <button class="metric-tab-card" data-metric="accepted" role="tab" aria-selected="false">
+          <div class="metric-tab-header">
+            <span class="metric-tab-icon">✅</span>
+            <span class="metric-tab-badge">Count</span>
+          </div>
+          <div class="metric-tab-title">Accepted Papers</div>
+          <div class="metric-tab-sub">Published Paper Count</div>
+        </button>
+        <button class="metric-tab-card" data-metric="sub_growth" role="tab" aria-selected="false">
+          <div class="metric-tab-header">
+            <span class="metric-tab-icon">📈</span>
+            <span class="metric-tab-badge">YoY</span>
+          </div>
+          <div class="metric-tab-title">Submission Growth</div>
+          <div class="metric-tab-sub">Annual Sub Volume Δ (%)</div>
+        </button>
+        <button class="metric-tab-card" data-metric="acc_growth" role="tab" aria-selected="false">
+          <div class="metric-tab-header">
+            <span class="metric-tab-icon">📊</span>
+            <span class="metric-tab-badge">YoY</span>
+          </div>
+          <div class="metric-tab-title">Accepted Growth</div>
+          <div class="metric-tab-sub">Annual Accepted Δ (%)</div>
+        </button>
+      </div>
+
+      <!-- Interactive Single SVG Chart Panel -->
+      <section class="chart-panel">
+        <div class="chart-header">
+          <div class="chart-title-area">
+            <h3 id="singleChartTitle">Acceptance Rate Trend</h3>
+            <p id="singleChartSubtitle">Annual ratio of accepted papers to total submissions</p>
+          </div>
+
+          <div class="chart-controls">
+            <!-- Chart Type: Line vs Bar -->
+            <div class="control-group" id="singleChartTypeBtns" role="group" aria-label="Chart Type Toggle">
+              <button class="ctrl-btn active" data-type="line">Line Chart</button>
+              <button class="ctrl-btn" data-type="bar">Bar Chart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pure SVG Chart Canvas Container -->
+        <div class="chart-container">
+          <div id="singleSvgChartContainer"></div>
+          <div class="chart-tooltip" id="singleChartTooltip"></div>
+        </div>
+
+        <!-- Chart Legend & Missing Data Projection Notice -->
+        <div class="chart-footer-info">
+          <div style="font-size:0.84rem; color:var(--text-muted);">
+            💡 <em>Hover over data points to inspect exact figures and annual deltas.</em>
+          </div>
+
+          <div class="projected-notice">
+            <svg width="22" height="12" viewBox="0 0 22 12" style="flex-shrink:0;" aria-hidden="true">
+              <line x1="1" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-dasharray="3,2" />
+              <circle cx="11" cy="6" r="3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2,1" />
+            </svg>
+            <span><strong>Dashed / Translucent</strong>: Projected estimate based on historical momentum for Undisclosed or Awaiting (N/A) data.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Corresponding Detailed Data Table -->
+      <section class="table-panel">
+        <div class="table-header">
+          <h3>Detailed Longitudinal Statistics <span id="singleTableTitleRange">(2016–2027)</span></h3>
+          <span style="font-size: 0.85rem; color: var(--text-dim);">Source-verified conference records</span>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table" aria-label="Conference Acceptance Data">
+            <thead>
+              <tr>
+                <th style="text-align:left;">Year</th>
+                <th>Submissions</th>
+                <th>Accepted</th>
+                <th>Acceptance Rate</th>
+                <th>Sub Growth</th>
+                <th>Acc Growth</th>
+                <th style="text-align:center;">Sources</th>
+              </tr>
+            </thead>
+            <tbody id="singleTableBody">
+              <!-- Dynamically populated rows -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- =====================================================================
+         VIEW 2: Multi-Conference Comparative View
+         ===================================================================== -->
+    <section id="multiConferenceView" class="view-section" aria-label="Multi Conference Comparison View">
+
+      <!-- Multi Filter Selector Card -->
+      <div class="multi-filter-box">
+        <div class="filter-row">
+          <div>
+            <div class="filter-group-title">Select Conferences to Compare</div>
+            <div class="multi-chips-list" id="multiConfChips">
+              <!-- Dynamically populated multi-select checkboxes -->
+            </div>
+          </div>
+
+          <div class="multi-actions-bar">
+            <button class="btn-ghost" id="multiSelectAllBtn">Select All</button>
+            <span style="color:var(--border-color);">|</span>
+            <button class="btn-ghost" id="multiClearAllBtn">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intuitive Multi Metric Selector Cards (Replaces Dropdown) -->
+      <div class="metric-selector-bar" id="multiMetricBtns" role="tablist" aria-label="Multi Metric Selection Cards">
+        <button class="metric-tab-card active" data-metric="acceptance_rate" role="tab" aria-selected="true">
+          <div class="metric-tab-header">
+            <span class="metric-tab-icon">🎯</span>
+            <span class="metric-tab-badge">Rate</span>
+          </div>
+          <div class="metric-tab-title">Acceptance Rate</div>
+          <div class="metric-tab-sub">Accepted / Total (%)</div>
+        </button>
+        <button class="metric-tab-card" data-metric="submission" role="tab" aria-selected="false">
+          <div class="metric-tab-header">
+            <span class="metric-tab-icon">📝</span>
+            <span class="metric-tab-badge">Volume</span>
+          </div>
+          <div class="metric-tab-title">Submission Count</div>
+          <div class="metric-tab-sub">Total Papers Submitted</div>
+        </button>
+        <button class="metric-tab-card" data-metric="accepted" role="tab" aria-selected="false">
+          <div class="metric-tab-header">
+            <span class="metric-tab-icon">✅</span>
+            <span class="metric-tab-badge">Count</span>
+          </div>
+          <div class="metric-tab-title">Accepted Papers</div>
+          <div class="metric-tab-sub">Published Paper Count</div>
+        </button>
+        <button class="metric-tab-card" data-metric="sub_growth" role="tab" aria-selected="false">
+          <div class="metric-tab-header">
+            <span class="metric-tab-icon">📈</span>
+            <span class="metric-tab-badge">YoY</span>
+          </div>
+          <div class="metric-tab-title">Submission Growth</div>
+          <div class="metric-tab-sub">Annual Sub Volume Δ (%)</div>
+        </button>
+        <button class="metric-tab-card" data-metric="acc_growth" role="tab" aria-selected="false">
+          <div class="metric-tab-header">
+            <span class="metric-tab-icon">📊</span>
+            <span class="metric-tab-badge">YoY</span>
+          </div>
+          <div class="metric-tab-title">Accepted Growth</div>
+          <div class="metric-tab-sub">Annual Accepted Δ (%)</div>
+        </button>
+      </div>
+
+      <!-- Comparative Chart Panel -->
+      <section class="chart-panel">
+        <div class="chart-header">
+          <div class="chart-title-area">
+            <h3 id="multiChartTitle">Cross-Venue Acceptance Comparison</h3>
+            <p id="multiChartSubtitle">Direct multi-series comparison across selected venues</p>
+          </div>
+
+          <div class="chart-controls">
+            <!-- Chart Type: Multi Line vs Grouped Bar -->
+            <div class="control-group" id="multiChartTypeBtns" role="group" aria-label="Comparison Chart Type">
+              <button class="ctrl-btn active" data-type="line">Multi Line</button>
+              <button class="ctrl-btn" data-type="bar">Grouped Bar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pure SVG Multi Chart Container -->
+        <div class="chart-container">
+          <div id="multiSvgChartContainer"></div>
+          <div class="chart-tooltip" id="multiChartTooltip"></div>
+        </div>
+
+        <!-- Interactive Multi Legend & Notice -->
+        <div class="chart-footer-info">
+          <div class="chart-legend" id="multiChartLegend">
+            <!-- Dynamically populated conference swatches -->
+          </div>
+
+          <div class="projected-notice">
+            <svg width="22" height="12" viewBox="0 0 22 12" style="flex-shrink:0;" aria-hidden="true">
+              <line x1="1" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-dasharray="3,2" />
+              <circle cx="11" cy="6" r="3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2,1" />
+            </svg>
+            <span><strong>Dashed Lines & Bars</strong>: Projected trend trajectories for Undisclosed or Awaiting (N/A) cycles.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Multi-Conference Comparison Matrix Table -->
+      <section class="table-panel">
+        <div class="table-header">
+          <h3>Cross-Conference Metric Matrix</h3>
+          <span style="font-size: 0.85rem; color: var(--text-dim);">Compare all venues side-by-side across all
+            years</span>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table" aria-label="Multi Conference Matrix Table">
+            <thead id="multiTableHeader">
+              <!-- Dynamically populated header with years -->
+            </thead>
+            <tbody id="multiTableBody">
+              <!-- Dynamically populated matrix rows -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       Site Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-note">
+        <strong>AR/VR/MR Conference Acceptance Statistics</strong>
+        <p style="margin-top: 0.35rem; color: var(--text-dim); font-size: 0.84rem;">
+          Data compiled from official conference announcements, ACM Digital Library, IEEE Computer Society, and
+          conference chairs' closing remarks.
+          Special markers: <strong>N/A</strong> denotes upcoming/unreleased cycles, while <strong>Undisclosed</strong>
+          denotes proceedings published without public submission counts.
+          Trend trajectories for missing values are projected using historical averages (for acceptance rate and growth rates) and linear momentum (for submission and paper volumes).
+        </p>
+      </div>
+
+      <div style="font-size: 0.84rem; color: var(--text-dim); text-align: right;">
+        <span>Built with Plain HTML, CSS & JS (Zero Dependencies)</span><br />
+        <span>Target Venues: CHI, ISMAR, SUI, UIST, IEEE VR, VRST</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Script -->
+  <script src="app.js"></script>
+</body>
+
+</html>

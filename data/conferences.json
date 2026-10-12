@@ -1,0 +1,204 @@
+[
+  {
+    "id": "chi",
+    "name": "CHI",
+    "full_name": "ACM CHI Conference on Human Factors in Computing Systems",
+    "since": 1982,
+    "description": "The ACM Conference on Human Factors in Computing Systems (CHI) series of academic conferences is generally considered the most prestigious in the field of human-computer interaction. It is hosted by ACM SIGCHI, the Special Interest Group on Computer-Human Interaction. CHI has been held annually since 1982 and attracts thousands of international attendees.",
+    "website": "https://chi.acm.org",
+    "sources": [
+      {
+        "name": "ACM Digital Library (CHI)",
+        "url": "https://dl.acm.org/conference/chi"
+      },
+      {
+        "name": "Official Portal",
+        "url": "https://chi.acm.org"
+      }
+    ],
+    "annual_links": {
+      "2016": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F2858036",
+      "2017": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3025453",
+      "2018": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3173574",
+      "2019": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3290605",
+      "2020": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3313831",
+      "2021": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3411764",
+      "2022": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3491102",
+      "2023": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3544548",
+      "2024": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3613904",
+      "2025": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3706598",
+      "2026": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3772318",
+      "2027": ""
+    },
+    "csv_file": "chi.csv",
+    "color": "#3B82F6",
+    "bg_color": "rgba(59, 130, 246, 0.15)"
+  },
+  {
+    "id": "uist",
+    "name": "UIST",
+    "full_name": "ACM Symposium on User Interface Software and Technology",
+    "since": 1988,
+    "description": "The premier forum for innovations in human-computer interfaces, graphical and tangible user interfaces, AR/VR software systems, input hardware, and interaction techniques.",
+    "website": "https://uist.acm.org",
+    "sources": [
+      {
+        "name": "ACM Digital Library (UIST)",
+        "url": "https://dl.acm.org/conference/uist"
+      }
+    ],
+    "annual_links": {
+      "2016": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F2984511",
+      "2017": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3126594",
+      "2018": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3242587",
+      "2019": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3332165",
+      "2020": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3379337",
+      "2021": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3472749",
+      "2022": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3526113",
+      "2023": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3586183",
+      "2024": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3654777",
+      "2025": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3746059",
+      "2026": "https://uist.acm.org/uist2026/",
+      "2027": ""
+    },
+    "csv_file": "uist.csv",
+    "color": "#EC4899",
+    "bg_color": "rgba(236, 72, 153, 0.15)"
+  },
+  {
+    "id": "vr",
+    "name": "IEEE VR",
+    "full_name": "IEEE Conference on Virtual Reality and 3D User Interfaces",
+    "since": 1993,
+    "description": "The premier international event for presenting research breakthroughs in virtual reality, augmented reality, 3D user interfaces, and immersive visualization technologies. Note: The statistics of 2016 and 2017 data were the accumulation of papers submitted to IEEE VR and IEEE 3DUI (2016: 47/189 = 33/135(VR) + 18/54(3DUI); 2017: 54/221 = 39/174(VR) + 15/47(3DUI)).",
+    "website": "https://ieeevr.org",
+    "sources": [
+      {
+        "name": "IEEE Xplore Digital Library",
+        "url": "https://ieeexplore.ieee.org/xpl/conhome/1000791/all-proceedings"
+      },
+      {
+        "name": "IEEE VR Official Portal",
+        "url": "https://ieeevr.org"
+      }
+    ],
+    "annual_links": {
+      "2016": "https://doi.org/10.1109/VR.2016.7504674",
+      "2017": "https://doi.org/10.1109/VR.2017.7892221",
+      "2018": "https://doi.org/10.1109/VR.2018.8446397",
+      "2019": "https://doi.org/10.1109/VR.2019.8798110",
+      "2020": "https://doi.org/10.1109/VR46266.2020.00123",
+      "2021": "https://doi.org/10.1109/VR50410.2021.00007",
+      "2022": "https://doi.org/10.1109/VR51125.2022.00007",
+      "2023": "https://doi.org/10.1109/VR55154.2023.00006",
+      "2024": "https://doi.org/10.1109/VR58804.2024.00007",
+      "2025": "https://doi.org/10.1109/VR59515.2025.00007",
+      "2026": "https://doi.org/10.1109/VR67842.2026.00007",
+      "2027": ""
+    },
+    "csv_file": "vr.csv",
+    "color": "#8B5CF6",
+    "bg_color": "rgba(139, 92, 246, 0.15)"
+  },
+  {
+    "id": "ismar",
+    "name": "ISMAR",
+    "full_name": "IEEE International Symposium on Mixed and Augmented Reality",
+    "since": 2002,
+    "description": "The premier international academic conference dedicated exclusively to Augmented Reality (AR), Mixed Reality (MR), and Virtual Reality (VR) scientific research and industrial applications.",
+    "website": "https://www.ismar.net",
+    "sources": [
+      {
+        "name": "IEEE Xplore Digital Library",
+        "url": "https://ieeexplore.ieee.org/xpl/conhome/1810084/all-proceedings"
+      },
+      {
+        "name": "ISMAR Official Portal",
+        "url": "https://www.ismar.net"
+      }
+    ],
+    "annual_links": {
+      "2016": "https://doi.org/10.1109/ISMAR.2016.6",
+      "2017": "https://doi.org/10.1109/ISMAR.2017.7",
+      "2018": "https://doi.org/10.1109/ISMAR.2018.00007",
+      "2019": "https://doi.org/10.1109/ISMAR.2019.00007",
+      "2020": "https://doi.org/10.1109/ISMAR50242.2020.00007",
+      "2021": "https://doi.org/10.1109/ISMAR52148.2021.00006",
+      "2022": "https://doi.org/10.1109/ISMAR55827.2022.00006",
+      "2023": "https://doi.org/10.1109/ISMAR59233.2023.00006",
+      "2024": "https://doi.org/10.1109/ISMAR62088.2024.00006",
+      "2025": "https://doi.org/10.1109/ISMAR67309.2025.00005",
+      "2026": "https://www.ieeeismar.net/2026/",
+      "2027": ""
+    },
+    "csv_file": "ismar.csv",
+    "color": "#10B981",
+    "bg_color": "rgba(16, 185, 129, 0.15)"
+  },
+  {
+    "id": "vrst",
+    "name": "VRST",
+    "full_name": "ACM Symposium on Virtual Reality Software and Technology",
+    "since": 1994,
+    "description": "An internationally recognized symposium dedicated to software architectures, rendering algorithms, hardware interfaces, and applications for virtual, augmented, and mixed reality.",
+    "website": "https://vrst.acm.org",
+    "sources": [
+      {
+        "name": "ACM Digital Library (VRST)",
+        "url": "https://dl.acm.org/conference/vrst"
+      },
+      {
+        "name": "VRST Official Portal",
+        "url": "https://vrst.acm.org/"
+      }
+    ],
+    "annual_links": {
+      "2016": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F2993369",
+      "2017": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3139131",
+      "2018": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3281505",
+      "2019": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3359996",
+      "2020": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3385956",
+      "2021": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3489849",
+      "2022": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3562939",
+      "2023": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3611659",
+      "2024": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3641825",
+      "2025": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3756884",
+      "2026": "https://vrst.acm.org/vrst2026/",
+      "2027": ""
+    },
+    "csv_file": "vrst.csv",
+    "color": "#06B6D4",
+    "bg_color": "rgba(6, 182, 212, 0.15)"
+  },
+  {
+    "id": "sui",
+    "name": "SUI",
+    "full_name": "ACM Symposium on Spatial User Interaction",
+    "since": 2013,
+    "description": "The premier venue for research on 3D spatial user interfaces, spatial computing, whole-body gesture/haptic interaction modalities, and virtual/augmented environments.",
+    "website": "https://sui.acm.org",
+    "sources": [
+      {
+        "name": "ACM Digital Library (SUI)",
+        "url": "https://dl.acm.org/conference/sui"
+      }
+    ],
+    "annual_links": {
+      "2016": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F2983310",
+      "2017": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3131277",
+      "2018": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3267782",
+      "2019": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3357251",
+      "2020": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3385959",
+      "2021": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3485279",
+      "2022": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3565970",
+      "2023": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3607822",
+      "2024": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3677386",
+      "2025": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3694907",
+      "2026": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3822518",
+      "2027": ""
+    },
+    "csv_file": "sui.csv",
+    "color": "#F59E0B",
+    "bg_color": "rgba(245, 158, 11, 0.15)"
+  }
+]
